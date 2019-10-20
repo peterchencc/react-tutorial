@@ -34,13 +34,20 @@ const TableBody = () => {
   )
 }
 
+const SimpleComponent = () => {
+  return <div>SimpleComponent</div>
+}
+
 class Table extends Component {
   render() {
     return (
-      <table>
-        <TableHeader />
-        <TableBody />
-      </table>
+      <div>
+        <table>
+          <TableHeader />
+          <TableBody />
+        </table>
+        <SimpleComponent />
+      </div>
     )
   }
 }
