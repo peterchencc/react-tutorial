@@ -27,10 +27,6 @@ const TableBody = props => {
   return <tbody>{rows}</tbody>
 }
 
-const SimpleComponent = () => {
-  return <div>SimpleComponent</div>
-}
-
 class Table extends Component {
   render() {
     const { characterData, removeCharacter } = this.props
@@ -44,7 +40,6 @@ class Table extends Component {
             removeCharacter={removeCharacter}
           />
         </table>
-        <SimpleComponent />
       </div>
     )
   }
